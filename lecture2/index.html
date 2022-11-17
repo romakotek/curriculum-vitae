@@ -5,8 +5,32 @@
     <title>My website</title>
   </head>
   <body>
-    <h1>this is the site body</h1>
+    <h2>this is the site body</h2>
     <a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a>
     <h1><a target="_blank" href="cv.html">Look at my CV!</a></h1>
+    <form>
+        <label for="name">Enter your name</label>
+        <input type="text" id="name">
+        <br />
+        <label for="birthDate">Enter your birthdate</label>
+        <input type="date" id="birthDate">
+        <br />
+        <label for="email">Enter your email</label>
+        <input type="email" id="email">
+        <br />
+        <label for="password">Enter your email</label>
+        <input type="password" id="password">
+        <br />
+        <input type="submit" value="SEND">
+        <br />
+        <label for="groups">Select group</label>
+        <select name="groups" id="groups">
+            <option value="default">Choose your destiny</option>
+            <option value="F1">F1 Thursday, Saturday</option>
+            <option value="F2">F2 Tuesday, Friday</option>
+            <option value="F3">F3 Thursday, Saturday</option>
+            <option value="F4">F4 Monday, Thursday</option>
+        </select>
+    </form>
   </body>
 </html>
