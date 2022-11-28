@@ -3,17 +3,19 @@
   margin: 0 auto;
   text-decoration: none;
   width: 1200px;
+  background-color: aquamarine;
   display: grid;
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-template-areas: 
   "h h"
   "n c";
+  grid-gap: 10px;
 }
 
 .header {
   grid-area: h;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 .header img {
   padding-left: 20px;
@@ -22,7 +24,7 @@
 
 .nav {
   grid-area: n;
-  background-color:azure;
+  /* background-color:azure; */
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -36,4 +38,32 @@
 
 .content {
   grid-area: c;
+}
+
+.outer {
+  border: 1px solid black;
+}
+
+.inner {
+  background-color: blue;
+  width: 50px;
+  height: auto;
+}
+
+.banner {
+  animation-duration: 2s;
+  animation-name: banner;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes banner {
+  from {
+    font-weight: normal;
+    color: black;
+  }
+  to {
+    font-weight: bold;
+    color: red;
+  }
 }
